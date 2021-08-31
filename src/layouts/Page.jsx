@@ -8,7 +8,7 @@ import ProductPage from '../pages/ProductPage';
 
 const Page = () => {
     return ( 
-        <div>
+        <>
             <Switch>
                 <Route exact path="/" component={HomePage} />                
                 <Route path="/products" component={ProductPage} />
@@ -16,7 +16,7 @@ const Page = () => {
                 <Route path="/admin" component={AdminPage} />
                 <Route component={ErrorPage} />
             </Switch>
-        </div>
+        </>
      );
 }
  

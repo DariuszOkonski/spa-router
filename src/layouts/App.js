@@ -8,7 +8,7 @@ import Page from './Page';
 function App() {
   return (
     <Router>      
-      <div className="App">
+      <div className="app">
         <header>
           <Header/>
         </header>

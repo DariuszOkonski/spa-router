@@ -5,6 +5,7 @@ import ContactPage from '../pages/ContactPage';
 import ErrorPage from '../pages/ErrorPage';
 import HomePage from '../pages/HomePage';
 import LoginPage from '../pages/LoginPage';
+import ProductListPage from '../pages/ProductListPage';
 import ProductPage from '../pages/ProductPage';
 
 const Page = () => {
@@ -12,7 +13,8 @@ const Page = () => {
         <>
             <Switch>
                 <Route exact path="/" component={HomePage} />                
-                <Route path="/products" component={ProductPage} />
+                <Route path="/products" component={ProductListPage} />
+                <Route path="/product/:id" component={ProductPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/admin" component={AdminPage} />
                 <Route path="/login" component={LoginPage} />

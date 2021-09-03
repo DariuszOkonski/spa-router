@@ -2,9 +2,9 @@ import React from 'react'
 
 const Product = (props) => {
     return ( 
-        <div>
-            <h2>{props.id}</h2>
-        </div>
+        <article>
+            <h1>{props.id}</h1>
+        </article>
      );
 }
  

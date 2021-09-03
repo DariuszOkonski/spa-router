@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Product from '../components/Product'
 
-const ProductPage = (props) => {
-    console.log(props)
+const ProductPage = ({match}) => {
     return (  
         <>
             <div>Strona produktu</div>
-            <Product {...props.match.params} />
+            <Product id={match.params.id} />
             <Link to="/products">Powrot do listy produktów</Link>
         </>
     );
